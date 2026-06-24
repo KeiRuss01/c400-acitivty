@@ -6,6 +6,7 @@ Goals in Learning Application Development:
 - Learn web development.
 - Learn mobile application development.
 - Build real-world software projects.
+- Be more knowledgeable about development.
 
 Additional Information:
 - Interested in software development and networking.
