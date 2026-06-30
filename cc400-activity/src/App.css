@@ -1,0 +1,148 @@
+/* base global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#root, body, .app-container {
+  border-left: none !important;
+  border-right: none !important;
+  max-width: 100%;
+  width: 100vw;
+  margin: 0;
+}
+
+/* navigation design */
+.navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5ba7fb;
+  padding: 15px 15%;
+}
+
+.nav-logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a, .navi a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.navi a:hover {
+  color: #cbd5e1;
+}
+
+/* registration form design */
+.form {
+  margin: 40px auto;
+  width: 30%;
+  min-width: 320px;     
+  max-width: 95%;      
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 20px 10px;   
+}
+
+h1 {
+  color: black;
+  font-size: clamp(24px, 5vw, 35px); 
+  margin-top: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 30px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+input, select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+/* button design */
+.btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;          
+}
+
+.btn-container button[type="submit"] {
+  background-color: #5ba7fb;
+  color: white;
+}
+
+.btn-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.btn-container button[type="reset"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-container button[type="reset"]:hover {
+  background-color: #545b62;
+}
+
+/* footer design */
+.footer {
+  background-color: #5ba7fb;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-top: 60px;    
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .navi {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 15px 5%;  
+  }
+
+  .form {
+    width: 90%;   
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+}
